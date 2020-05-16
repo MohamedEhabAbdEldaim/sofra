@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_resterents_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d120"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+        android:elevation="@dimen/d10"
+        android:padding="@dimen/d4"
+        app:cardCornerRadius="@dimen/d16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_resterents_ImageView_Restaurant"
+                    android:layout_width="@dimen/d90"
+                    android:layout_height="@dimen/d90" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/d5"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_resterents_Tv_Restaurant_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/details_font"
+                    android:textSize="@dimen/txt_16sp" />
+
+                <RatingBar
+                    android:id="@+id/item_resterents_RatingBar_Restaurant"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/d5"
+                    android:layout_weight="1"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:paddingTop="@dimen/d6"
+                    android:paddingBottom="@dimen/d6"
+                    android:stepSize="0.1" />
+
+
+                <TextView
+                    android:id="@+id/item_resterents_tv_limit_to_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/d5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/details_font"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+                <TextView
+                    android:id="@+id/item_resterents_tv_delivery_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/d5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/details_font"
+                    android:textSize="@dimen/txt_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/item_resterents_iv_available"
+                        android:layout_width="@dimen/d40"
+                        android:layout_height="@dimen/d40"
+                        android:padding="@dimen/d4"
+                        android:src="@drawable/ic_check_circle_green_24dp" />
+
+                    <TextView
+
+                        android:id="@+id/item_resterent_Tv_Restaurant_Available"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/details_font"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/d2"
+                        android:textSize="@dimen/txt_16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

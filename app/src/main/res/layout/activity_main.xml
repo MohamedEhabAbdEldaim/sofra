@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.mainActivity.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/activity_main_im_top"
+                android:layout_width="@dimen/d100"
+                android:layout_height="@dimen/d100"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/d8"
+                android:padding="@dimen/d4"
+                android:src="@drawable/sofratoplogo" />
+
+            <ImageView
+                android:layout_width="@dimen/d300"
+                android:layout_height="@dimen/d300"
+                android:layout_above="@id/activity_main_btn_order"
+                android:layout_below="@+id/activity_main_im_top"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/d14"
+                android:padding="@dimen/d8"
+                android:src="@drawable/sofralogo" />
+
+
+            <Button
+                android:id="@+id/activity_main_btn_order"
+                android:layout_width="@dimen/d250"
+                android:layout_height="@dimen/d50"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/d14"
+                android:background="@drawable/shap_botton"
+                android:text="@string/orderfood"
+                android:textSize="@dimen/txt_20sp" />
+
+            <Button
+                android:id="@+id/activity_main_btn_sell"
+                android:layout_width="@dimen/d250"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_main_btn_order"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/d14"
+                android:background="@drawable/shap_botton"
+                android:text="@string/sellfood"
+                android:textSize="@dimen/txt_20sp" />
+
+            <ImageView
+                android:layout_width="@dimen/d100"
+                android:layout_height="@dimen/d100"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/d8"
+                android:padding="@dimen/d4"
+                android:src="@drawable/sofratoplogo" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
